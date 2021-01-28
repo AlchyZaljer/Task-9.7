@@ -34,10 +34,9 @@ body {
     border-radius: 2%;
 }
 
-.input-window {
+#inputWindow {
     text-align: end;
     font-size: x-large;
-    /* height: 15vh; */
     border-color: gray;
     resize: none;
 }

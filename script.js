@@ -1,9 +1,9 @@
 let lastOperand = 0;
 let operation = null;
 let result = null;
-const inputWindow = document.getElementById('inputWindow');
-let history = '';
 let fixedFlag = null;
+let history = '';
+const inputWindow = document.getElementById('inputWindow');
 
 document.querySelector('#btn_0').addEventListener('click', function () {
     inputWindow.value += '0';
@@ -58,9 +58,9 @@ document.querySelector('#btn_delete').addEventListener('click', function () {
 });
 
 document.querySelector('#btn_clear').addEventListener('click', function () {
-    const storage = inputWindow.value;
-    console.log('start = ' + storage);
-    inputWindow.value = storage.slice(0, storage.toString().length-1);
+    const repository = inputWindow.value;
+    console.log('start = ' + repository);
+    inputWindow.value = repository.slice(0, repository.toString().length-1);
     lastOperand = null;
     operation = null;
 });

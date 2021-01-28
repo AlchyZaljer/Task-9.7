@@ -132,5 +132,6 @@ document.querySelector('#btn_equal').addEventListener('click', function () {
     fixedFlag = null;
     inputWindow.value += '=' + result + '\n';
     history = inputWindow.value;
+    inputWindow.scrollTop = inputWindow.scrollHeight;
 });
 

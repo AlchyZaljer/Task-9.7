@@ -133,11 +133,7 @@ document.querySelector('#btn_equal').addEventListener('click', function () {
     if (operation === 'mul') {
         const cuttingLength = history.toString().length + lastOperand.toString().length + 1;
         const secondOperand = parseFloat(inputWindow.value.slice(cuttingLength));
-        if (fixedFlag === 1) {
-            result = (lastOperand * secondOperand).toFixed(5);
-        } else {
-            result = (lastOperand * secondOperand).toFixed();
-        };
+        result = lastOperand * secondOperand;
         operation = null;
         lastOperand = null;
         fixedFlag = null;

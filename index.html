@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row calc-row align-items-center">
+        <div class="col col-md-5 offset-md-3">
+            <div class="form-group">
+                <div class="card" id="calc">
+                    <div class="card-body">
+                        <div class="row no-gutters">
+                            <textarea class="form-control input-window" type="text" rows="2" id="inputWindow" placeholder="0"></textarea>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-danger form-control" id="btn_delete">C</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-danger form-control" id="btn_clear">&lt;</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-info form-control" id="btn_inverse">-x</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-info form-control" id="btn_sqrt">&#8730;</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_7">7</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_8">8</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_9">9</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-info form-control" id="btn_div">&divide;</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_4">4</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_5">5</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_6">6</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-info form-control" id="btn_mul">&times;</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_1">1</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_2">2</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_3">3</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-info form-control" id="btn_sub">-</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_dot">.</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-muted form-control" id="btn_0">0</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-success form-control" id="btn_equal">=</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-info form-control" id="btn_add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

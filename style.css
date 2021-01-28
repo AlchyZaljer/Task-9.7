@@ -1,0 +1,64 @@
+body {
+    background-color: lightpink;
+}
+
+.calc-row {
+    height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.row {
+    margin-bottom: 1vh;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.col {
+    margin-right: 1vw;
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+.card {
+    border: none;
+    background-color: inherit;
+}
+
+.card-body {
+    background-color: rgb(56, 46, 46);
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+.input-window {
+    text-align: end;
+    font-size: x-large;
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: black;
+}
+
+.btn {
+    color: white;
+}
+
+.btn-outline-info {
+    background-color: rgba(0, 0, 255, 0.4);
+}
+
+.btn-outline-danger {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.btn-outline-success {
+    background-color: rgba(0, 128, 0, 0.7);
+}
+
+.btn-outline-muted {
+    background-color: rgba(211, 211, 211, 0.2);
+    border-color: gray;
+}

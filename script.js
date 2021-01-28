@@ -163,7 +163,7 @@ document.querySelector('#btn_add').addEventListener('click', function () {
         lastOperand = parseFloat(result);
         resultCalculationFlag = 1;
     } else {
-        lastOperand = parseFloat(operand);
+        lastOperand = parseFloat(operand);         
         fixedExtraFlag = 0;
     };
     operation = 'add';

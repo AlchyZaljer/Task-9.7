@@ -102,69 +102,35 @@ document.querySelector('#btn_add').addEventListener('click', function () {
 });
 
 document.querySelector('#btn_equal').addEventListener('click', function () {
+    const cuttingLength = history.toString().length + lastOperand.toString().length + 1;
+    const secondOperand = parseFloat(inputWindow.value.slice(cuttingLength));
     if (operation === 'add') {
-        const cuttingLength = history.toString().length + lastOperand.toString().length + 1;
-        const secondOperand = parseFloat(inputWindow.value.slice(cuttingLength));
         if (fixedFlag === 1) {
             result = (lastOperand + secondOperand).toFixed(5);
         } else {
             result = (lastOperand + secondOperand).toFixed();
-        };
-        operation = null;
-        lastOperand = null;
-        fixedFlag = null;
-        inputWindow.value += '=' + result + '\n';
-        history = inputWindow.value;
-    }
+        }};
     if (operation === 'sub') {
-        const cuttingLength = history.toString().length + lastOperand.toString().length + 1;
-        const secondOperand = parseFloat(inputWindow.value.slice(cuttingLength));
         if (fixedFlag === 1) {
             result = (lastOperand - secondOperand).toFixed(5);
         } else {
             result = (lastOperand - secondOperand).toFixed();
-        };
-        operation = null;
-        lastOperand = null;
-        fixedFlag = null;
-        inputWindow.value += '=' + result + '\n';
-        history = inputWindow.value;
-    }
+        }};
     if (operation === 'mul') {
-        const cuttingLength = history.toString().length + lastOperand.toString().length + 1;
-        const secondOperand = parseFloat(inputWindow.value.slice(cuttingLength));
-        result = lastOperand * secondOperand;
-        operation = null;
-        lastOperand = null;
-        fixedFlag = null;
-        inputWindow.value += '=' + result + '\n';
-        history = inputWindow.value;
-    }
+        if (fixedFlag === 1) {
+        result = (lastOperand * secondOperand).toFixed(5);
+        } else {
+            result = (lastOperand * secondOperand).toFixed();
+        }};
     if (operation === 'div') {
-        const cuttingLength = history.toString().length + lastOperand.toString().length + 1;
-        const secondOperand = parseFloat(inputWindow.value.slice(cuttingLength));
         result = lastOperand / secondOperand;
-        fixedFlag = null;
-        operation = null;
-        lastOperand = null;
-        inputWindow.value += '=' + result + '\n';
-        history = inputWindow.value;
-    }
-    if (operation === 'inverse') {
-        result = -lastOperand;
-        operation = null;
-        lastOperand = null;
-        fixedFlag = null;
-        inputWindow.value += '=' + result + '\n';
-        history = inputWindow.value;
-    }
-    if (operation === 'sqrt') {
-        result = Math.sqrt(lastOperand);
-        operation = null;
-        lastOperand = null;
-        fixedFlag = null;
-        inputWindow.value += '=' + result + '\n';
-        history = inputWindow.value;
-    }
+    };
+    if (operation === 'inverse') {result = -lastOperand;};
+    if (operation === 'sqrt') {result = Math.sqrt(lastOperand);};
+    operation = null;
+    lastOperand = null;
+    fixedFlag = null;
+    inputWindow.value += '=' + result + '\n';
+    history = inputWindow.value;
 });
 

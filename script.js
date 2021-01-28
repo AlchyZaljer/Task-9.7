@@ -58,10 +58,9 @@ document.querySelector('#btn_dot').addEventListener('click', function () {
 document.querySelector('#btn_delete').addEventListener('click', function () {
     lastOperand = 0;
     result = 0;
-    operation = null;
-    equalFlag = 0;
     fixedFlag = 0;
     fixedExtraFlag = 0;
+    operation = null;
     history = '';
     inputWindow.value = '';
 });

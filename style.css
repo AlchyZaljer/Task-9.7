@@ -30,7 +30,7 @@ body {
 
 .card-body {
     background-color: rgb(56, 46, 46);
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 2%;
 }
 
@@ -38,11 +38,17 @@ body {
     text-align: end;
     font-size: x-large;
     height: 15vh;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-color: black;
+    border-color: gray;
+    resize: none;
 }
 
 .btn {
+    color: white;
+}
+
+.btn:focus {
+    background-color: inherit;
+    border: none;
     color: white;
 }
 
@@ -58,7 +64,11 @@ body {
     background-color: rgba(0, 128, 0, 0.7);
 }
 
-.btn-outline-muted {
+.btn-outline-primary {
     background-color: rgba(211, 211, 211, 0.2);
     border-color: gray;
+}
+
+.btn-outline-primary:hover {
+    background-color: rgba(211, 211, 211, 0.8);
 }
